@@ -75,6 +75,8 @@ export const AppContextProvider = (props) => {
         return Math.floor(totalAmount * 100) / 100;
     }
 
+
+
     useEffect(() => {
         fetchProductData()
     }, [])
@@ -94,9 +96,13 @@ export const AppContextProvider = (props) => {
         getCartCount, getCartAmount
     }
 
+  
+
+
     return (
         <AppContext.Provider value={value}>
             {props.children}
         </AppContext.Provider>
     )
 }
+
